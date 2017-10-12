@@ -1,26 +1,32 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+# Fittr - the personal fitness app
 
-## How to use this template
+## Introduction
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+This fitness app done for INFO3315 includes very simple functionality if there is functionality at all. Mostly displays static data.
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+## Installation
 
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+This project requires the installation of the ionic framework which can be installed using '''npm'''.
 
 ```bash
 $ sudo npm install -g ionic cordova
-$ ionic start myTabs tabs
 ```
 
-Then, to run it, cd into `myTabs` and run:
+## Setup
+
+To setup the project, you will need to install all npm dependencies, this is done by running the command below:
 
 ```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
+$ npm install
 ```
 
-Substitute ios for android if not on a Mac.
+This will download a whole bunch of packages that are required to compile the project.
+
+## Running the project
+
+Running the project is simple after the installation of ionic and will only require the single command below:
+
+```bash
+$ ionic serve
+```
 
