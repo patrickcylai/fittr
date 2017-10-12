@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Stats
+    </ion-title>
+  </ion-navbar>
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="statsMode">
+      <ion-segment-button value="currentWeek">
+        This week
+      </ion-segment-button>
+      <ion-segment-button value="historical">
+        Historical
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Current Week Chart -->
+  <div [hidden]="statsMode != 'currentWeek'" style="height: 50%" padding>
+    <canvas #barCanvas></canvas>
+  </div>
+
+  <div [ngSwitch]="statsMode">
+    <!-- Current Week Info -->
+    <br>
+    <div *ngSwitchCase="'currentWeek'" padding>
+      <h5>Days with Goal Met</h5>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-icon name="checkmark-circle" color="primary"></ion-icon>
+            <br>
+            <ion-label>Sun</ion-label>
+          </ion-col>
+          <ion-col>
+            <ion-icon name="checkmark-circle" color="primary"></ion-icon>
+            <br>
+            <ion-label>Mon</ion-label>
+          </ion-col>
+          <ion-col>
+            <ion-icon name="radio-button-off" color="primary"></ion-icon>
+            <br>
+            <ion-label>Tues</ion-label>
+          </ion-col>
+          <ion-col>
+            <ion-icon name="checkmark-circle" color="primary"></ion-icon>
+            <br>
+            <ion-label>Wed</ion-label>
+          </ion-col>
+          <ion-col>
+            <ion-icon name="radio-button-off" color="primary"></ion-icon>
+            <br>
+            <ion-label>Thurs</ion-label>
+          </ion-col>
+          <ion-col>
+            <ion-icon name="radio-button-off" color="primary"></ion-icon>
+            <br>
+            <ion-label>Fri</ion-label>
+          </ion-col>
+          <ion-col>
+            <ion-icon name="radio-button-off" color="primary"></ion-icon>
+            <br>
+            <ion-label>Sat</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-card>
+        <ion-card-header>Average daily steps lower than last week</ion-card-header>
+      </ion-card>
+    </div>
+
+
+    <!-- Historical -->
+    <div *ngSwitchCase="'historical'">
+      <ion-item-group>
+        <ion-item-divider color="light">This Week</ion-item-divider>
+        <ion-item>Total<ion-note item-end>1680</ion-note></ion-item>
+        <ion-item>Average<ion-note item-end>240</ion-note></ion-item>
+      </ion-item-group>
+
+      <ion-item-group>
+        <ion-item-divider color="light">Last Week</ion-item-divider>
+        <ion-item>Total<ion-note item-end>4336</ion-note></ion-item>
+        <ion-item>Average<ion-note item-end>619</ion-note></ion-item>
+      </ion-item-group>
+    
+      <ion-item-group>
+        <ion-item-divider color="light">2 Weeks ago</ion-item-divider>
+        <ion-item>Total<ion-note item-end>593</ion-note></ion-item>
+        <ion-item>Average<ion-note item-end>85</ion-note></ion-item>
+      </ion-item-group>
+    </div>
+  </div>
+</ion-content>

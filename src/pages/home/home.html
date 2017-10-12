@@ -1,17 +1,42 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+  <ion-navbar text-center>
+    <ion-title>
+      <img alt="logo" height="17" src="assets/logo/logo.svg">
+      fittr
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <ion-grid>
+    <ion-row align-items-center>
+      <ion-col align-self-center>
+        <div class="progress-wrapper">
+          <div class="current" [ngStyle]="getOverlayStyle()">5294<br>Steps</div>
+          <round-progress 
+          [current]="5294" 
+          [max]="10000"
+          [rounded]="true"
+          [stroke]="20"
+          [animationDelay]="1000"
+          [duration]="1000"></round-progress>                  
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="card-background-page">
+      <ion-col text-center>
+        <ion-card>
+          <ion-card-header><h1>264</h1></ion-card-header>
+          <ion-card-content>Calories</ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col text-center>
+        <ion-card>
+          <ion-card-header><h1>2.04</h1></ion-card-header>
+          <ion-card-content>Kilometres</ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
