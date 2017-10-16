@@ -8,9 +8,9 @@
 
 <ion-content>
   <ion-list>
-    <button ion-item>
+    <button ion-item (click)="showAlert()">
       Daily Step Goal
-      <ion-note item-end>10000</ion-note>
+      <ion-note item-end>{{goal}}</ion-note>
     </button>
     <ion-item>
       <ion-label>Reminders</ion-label>
