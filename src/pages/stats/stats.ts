@@ -26,8 +26,16 @@ export class StatsPage {
         labels: ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"],
         datasets: [{
           label: 'Steps',
-          data: [5434, 4924, 8092, 9234, 10300, 3348, 2023],
-          backgroundColor: 'rgba(66, 134, 244,0.3)',
+          data: [188, 1803, 1002, 2916, 447, 1374, 764],
+          backgroundColor: [
+            'rgba(66, 134, 244,0.5)',
+            'rgba(255, 0, 0, 0.5)',
+            'rgba(66, 134, 244,0.5)',
+            'rgba(66, 134, 244,0.5)',
+            'rgba(255, 0, 0, 0.5)',
+            'rgba(66, 134, 244,0.5)',
+            'rgba(66, 134, 244,0.5)',
+          ],
           borderWidth: 1
         }]
       },
@@ -37,7 +45,8 @@ export class StatsPage {
         scales: {
           yAxes: [{
             ticks: {
-              beginAtZero: true
+              beginAtZero: true,
+              max: 11000
             }
           }]
         },
@@ -59,7 +68,26 @@ export class StatsPage {
               xAdjust: 10,
               yAdjust: -10
             }
-          }]
+          },
+          {
+            type: 'line',
+            mode: 'horizontal',
+            scaleID: 'y-axis-0',
+            value: 5000,
+            borderColor: 'rgb(75, 192, 192)',
+            borderWidth: 1,
+            label: {
+              enabled: true,
+              content: 'Goal',
+              position: "left",
+              fontSize: 11,
+              fontColor: "grey",
+              backgroundColor: 'rgba(0,0,0,0)',
+              xAdjust: 10,
+              yAdjust: -10
+            }
+          },
+          ]
         }
       }
     });

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController} from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
@@ -10,7 +10,6 @@ export class HomePage {
   radius: number = 125;  
 
   constructor(public navCtrl: NavController) {
-
   }
 
   getOverlayStyle() {

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 @Component({
   selector: 'page-settings',
@@ -8,11 +9,10 @@ import { AlertController } from 'ionic-angular';
 })
 
 export class SettingsPage {
-	public goal: number = 10000;  
+	public goal: number = 5000;  
 
   constructor(public navCtrl: NavController, 
   	public alertCtrl: AlertController) {
-
   }
 
   showAlert() {

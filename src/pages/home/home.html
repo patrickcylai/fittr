@@ -12,10 +12,12 @@
     <ion-row align-items-center>
       <ion-col align-self-center>
         <div class="progress-wrapper">
-          <div class="current" [ngStyle]="getOverlayStyle()">5294<br>Steps</div>
+          <div class="current" [ngStyle]="getOverlayStyle()">1803<br>
+          Steps</div>
+          <div> {{goal}} </div>
           <round-progress 
-          [current]="5294" 
-          [max]="10000"
+          [current]="1803" 
+          [max]="5000"
           [rounded]="true"
           [stroke]="20"
           [animationDelay]="1000"
@@ -26,14 +28,14 @@
 
     <ion-row class="card-background-page">
       <ion-col text-center>
-        <ion-card>
-          <ion-card-header><h1>264</h1></ion-card-header>
+        <ion-card color="teal">
+          <ion-card-header><h1>135</h1></ion-card-header>
           <ion-card-content>Calories</ion-card-content>
         </ion-card>
       </ion-col>
       <ion-col text-center>
-        <ion-card>
-          <ion-card-header><h1>2.04</h1></ion-card-header>
+        <ion-card color="teal">
+          <ion-card-header><h1>1.95</h1></ion-card-header>
           <ion-card-content>Kilometres</ion-card-content>
         </ion-card>
       </ion-col>
