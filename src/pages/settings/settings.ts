@@ -9,7 +9,7 @@ import { HomePage } from '../home/home';
 })
 
 export class SettingsPage {
-	public goal: number = 5000;  
+	public goal: number = 1600;  
 
   constructor(public navCtrl: NavController, 
   	public alertCtrl: AlertController) {

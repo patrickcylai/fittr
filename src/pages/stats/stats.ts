@@ -26,15 +26,15 @@ export class StatsPage {
         labels: ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"],
         datasets: [{
           label: 'Steps',
-          data: [188, 1803, 1002, 2916, 447, 1374, 764],
+          data: [1834, 945, 1483, 823, 2953, 0, 0],
           backgroundColor: [
             'rgba(66, 134, 244,0.5)',
             'rgba(255, 0, 0, 0.5)',
             'rgba(66, 134, 244,0.5)',
-            'rgba(66, 134, 244,0.5)',
             'rgba(255, 0, 0, 0.5)',
             'rgba(66, 134, 244,0.5)',
-            'rgba(66, 134, 244,0.5)',
+            'rgba(255, 0, 0, 0.5)',
+            'rgba(255, 0, 0, 0.5)',
           ],
           borderWidth: 1
         }]
@@ -73,7 +73,7 @@ export class StatsPage {
             type: 'line',
             mode: 'horizontal',
             scaleID: 'y-axis-0',
-            value: 5000,
+            value: 1600,
             borderColor: 'rgb(75, 192, 192)',
             borderWidth: 1,
             label: {

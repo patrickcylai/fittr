@@ -30,7 +30,7 @@
       <ion-grid>
         <ion-row>
           <ion-col>
-            <ion-icon name="radio-button-off" color="primary"></ion-icon>
+            <ion-icon name="checkmark-circle" color="primary"></ion-icon>
             <br>
             <ion-label>Sun</ion-label>
           </ion-col>
@@ -50,7 +50,7 @@
             <ion-label>Wed</ion-label>
           </ion-col>
           <ion-col>
-            <ion-icon name="radio-button-off" color="primary"></ion-icon>
+            <ion-icon name="checkmark-circle" color="primary"></ion-icon>
             <br>
             <ion-label>Thurs</ion-label>
           </ion-col>
@@ -66,8 +66,8 @@
           </ion-col>
         </ion-row>
       </ion-grid>
-      <ion-card color="invalid">
-        <ion-card-header>Average daily steps lower than last week</ion-card-header>
+      <ion-card color="secondary">
+        <ion-card-header>Average daily steps higher than last week</ion-card-header>
       </ion-card>
     </div>
 
@@ -76,20 +76,20 @@
     <div *ngSwitchCase="'historical'">
       <ion-item-group>
         <ion-item-divider color="teal">This Week</ion-item-divider>
-        <ion-item>Total<ion-note item-end>8,494</ion-note></ion-item>
+        <ion-item>Total<ion-note item-end>8,038</ion-note></ion-item>
         <ion-item>Average<ion-note item-end>1,213</ion-note></ion-item>
       </ion-item-group>
 
       <ion-item-group>
         <ion-item-divider color="teal">Last Week</ion-item-divider>
-        <ion-item>Total<ion-note item-end>13,245</ion-note></ion-item>
-        <ion-item>Average<ion-note item-end>1,892</ion-note></ion-item>
+        <ion-item>Total<ion-note item-end>6,295</ion-note></ion-item>
+        <ion-item>Average<ion-note item-end>899</ion-note></ion-item>
       </ion-item-group>
     
       <ion-item-group>
         <ion-item-divider color="teal">2 Weeks ago</ion-item-divider>
-        <ion-item>Total<ion-note item-end>6,295</ion-note></ion-item>
-        <ion-item>Average<ion-note item-end>899</ion-note></ion-item>
+        <ion-item>Total<ion-note item-end>4,204</ion-note></ion-item>
+        <ion-item>Average<ion-note item-end>600</ion-note></ion-item>
       </ion-item-group>
     </div>
   </div>
